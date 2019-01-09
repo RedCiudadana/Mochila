@@ -1,4 +1,3 @@
-/* eslint-env node */
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
@@ -6,33 +5,14 @@ const nodeSass = require('node-sass');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    SRI: {
-      enabled: false
-    },
-
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
-      // No incluir el archivo de boostrap.css porque se incluyen el archivo app.scss.
       'importBootstrapCSS': false
     },
-
-    sassOptions: {
-      // Utilizar nodeSass, es drasticamente más rapido.
+    'sassOptions': {
       implementation: nodeSass
-    },
-
-    ifa: {
-      enabled: true,
-      inline: false,
-    },
-
-
-    fingerprint: {
-      generateAssetMap: true,
-      fingerprintAssetMap: true
     }
-
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -47,12 +27,6 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
-
-  app.import('node_modules/flexslider/jquery.flexslider-min.js');
-  app.import('node_modules/isotope-layout/dist/isotope.pkgd.min.js');
-  app.import('node_modules/tabletop/src/tabletop.min.js');
-  app.import('vendor/jquery.gridAccordion.js');
-  app.import('vendor/shims.js');
 
   return app.toTree();
 };

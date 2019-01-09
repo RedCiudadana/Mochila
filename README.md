@@ -1,22 +1,57 @@
-<p align="center">
-  <a href="http://redciudadana.org"><img width="auto" src="http://redciudadana.org/wp-content/uploads/2018/05/red-logo-01.png"></a>
-</p>
+# mochila
 
-# MiGuatemala
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
-MiGuatemala es un app construido en [Ember](http://emberjs.com). Permite mostrar información sobre funcionarios o candidatos, con el fin de informar a ciudadanos. Ejemplo: [Plataforma de pruebas](http://miguatemala.redciudadana.org/).
+## Prerequisites
 
-## Instalación
-La información sobre la instalación la puedes encontrar [aquí](https://github.com/RedCiudadana/MiGuatemala/blob/master/documentation/APP_SETUP.md).
+You will need the following things properly installed on your computer.
 
-## Otros archivos
-- [CHANGELOG](https://github.com/RedCiudadana/MiGuatemala/blob/master/CHANGELOG.md)
-- [CONFIG](https://github.com/RedCiudadana/MiGuatemala/blob/master/documentation/CONFIG.md)
-- [DATOS](https://github.com/RedCiudadana/MiGuatemala/blob/master/documentation/DATOS.md)
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with npm)
+* [Ember CLI](https://ember-cli.com/)
+* [Google Chrome](https://google.com/chrome/)
 
-## Generar documentación YUIDoc
-Genera la documentación de YUIDoc en HTML.
-```bash
-ember ember-cli-yuidoc
-open docs/index.html
-```
+## Installation
+
+* `git clone <repository-url>` this repository
+* `cd mochila`
+* `npm install`
+
+## Running / Development
+
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+
+### Code Generators
+
+Make use of the many generators for code, try `ember help generate` for more details
+
+### Running Tests
+
+* `ember test`
+* `ember test --server`
+
+### Linting
+
+* `npm run lint:hbs`
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
+* [ember.js](https://emberjs.com/)
+* [ember-cli](https://ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
