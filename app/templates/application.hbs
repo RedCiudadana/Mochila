@@ -10,14 +10,56 @@
     <a href="#">
       <img
         src="img/icono-facebook.png"
-        alt="iconoo de Facebook">
+        alt="Icono de Facebook">
     </a>
     <a href="#">
       <img
         src="img/icono-twitter.png"
-        alt="iconoo de Twitter">
+        alt="Icono de Twitter">
     </a>
   </div>
 {{/bs-navbar}}
+
+<main class="container-fluid">
+  <section class="row">
+    <div class="col-12 banner" style="background-image: url('/img/banner.png');">
+      <div class="text">
+        <h1 class="display-3">Próximamente</h1>
+        <h2>Mochila Electoral</h2>
+      </div>
+      <div class="counter row">
+        <div class="col-4">
+          <h1>00</h1>
+          <h2>Días</h2>
+        </div>
+        <div class="col-4 center">
+          <h1>00</h1>
+          <h2>Días</h2>
+        </div>
+        <div class="col-4">
+          <h1>00</h1>
+          <h2>Días</h2>
+        </div>
+      </div>
+      <div class="suscribe">
+      {{#bs-form model=login formLayout="inline" novalidate=true as |form|}}
+          {{#form.element placeholder="Email" property="email" as |el|}}
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <img
+                    src="img/icono-correo.png"
+                    alt="Icono de un paquete de correo">
+                </span>
+              </div>
+              <input value={{el.value}} class="form-control" placeholder="Email" oninput={{action (mut el.value) value="target.value"}} onchange={{action (mut el.value) value="target.value"}} id={{el.id}} type="text">
+            </div>
+          {{/form.element}}
+          {{bs-button defaultText="Suscríbete" type="secondary" buttonType="submit"}}
+      {{/bs-form}}
+      </div>
+    </div>
+  </section>
+</main>
 
 {{outlet}}

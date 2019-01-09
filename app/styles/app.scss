@@ -1,4 +1,9 @@
+$primary: #444471;
+$secondary: #2ab3ac;
+
 @import "ember-bootstrap/bootstrap";
+
+$font-light: 400;
 
 body {
     background-color: red;
@@ -24,3 +29,73 @@ body {
     }
 }
 
+// Main
+
+.banner {
+    // Según el radio de la imagen.
+    height: 39vw;
+
+    // Layout
+    padding: 100px;
+
+    // Background
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .text {
+
+        h1 {
+            color: $white;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: $secondary;
+            font-weight: $font-light;
+        }
+    }
+
+    .counter {
+        margin-top: 40px;
+        width: 40%;
+        text-align: center;
+
+        h1 {
+            font-size: 3rem;
+            color: $white;
+            font-weight: normal;
+        }
+
+        h2 {
+            color: $white;
+            font-size: 1.3rem;
+            font-weight: $font-light;
+        }
+
+        .center {
+            border-color: $white;
+            border-style: solid;
+            border-width: 2px;
+            border-top: 0px;
+            border-bottom: 0px;
+        }
+    }
+
+    .suscribe {
+        margin-top: 40px;
+
+        .input-group {
+            width: 25%;
+            margin-right: 40px;
+        }
+
+        .form-group {
+            display: contents;
+        }
+
+        .input-group-text img {
+            width: 20px;
+        }
+    }
+}
