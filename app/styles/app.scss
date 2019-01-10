@@ -5,19 +5,15 @@ $secondary: #2ab3ac;
 
 $font-light: 400;
 
-body {
-    background-color: red;
-}
-
 // Navbar
 
 .navbar {
     padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     .navbar-brand img {
-        width: 300px;
+        width: 200px;
     }
 
     .social {
@@ -29,14 +25,36 @@ body {
     }
 }
 
+
+@include media-breakpoint-up(md) {
+
+    .navbar {
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .navbar-brand img {
+            width: 300px;
+        }
+    }
+}
+
 // Main
 
 .banner {
+    text-align: center;
     // Según el radio de la imagen.
-    height: 39vw;
+    height: 208vw;
+
+    img.background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        z-index: -1;
+    }
 
     // Layout
-    padding: 100px;
+    padding: 30px;
 
     // Background
     background-repeat: no-repeat;
@@ -58,7 +76,9 @@ body {
 
     .counter {
         margin-top: 40px;
-        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         text-align: center;
 
         h1 {
@@ -86,8 +106,7 @@ body {
         margin-top: 40px;
 
         .input-group {
-            width: 25%;
-            margin-right: 40px;
+            margin-bottom: 10px;
         }
 
         .form-group {
@@ -96,6 +115,27 @@ body {
 
         .input-group-text img {
             width: 20px;
+            z-index: 10000;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .banner {
+        // Layout
+        padding: 100px;
+    }
+
+    .counter {
+        margin-top: 40px;
+        width: 40%;
+        text-align: center;
+    }
+
+    .suscribe {
+        .input-group {
+            width: 25%;
+            margin-right: 40px;
         }
     }
 }
@@ -103,7 +143,7 @@ body {
 // Footer
 
 footer {
-    background-color: $light;
+    background-color: $white;
     padding-top: 25px;
     padding-bottom: 25px;
 
@@ -113,8 +153,7 @@ footer {
 
     img {
         max-height: 80px;
-        min-height: 60px;
-        max-width: 12%;
+        max-width: 30%;
         width: auto;
         margin: 25px;
     }

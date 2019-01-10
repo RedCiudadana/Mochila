@@ -22,9 +22,9 @@
 
 <main class="container-fluid">
   <section class="row">
-    <div class="col-12 banner" style="background-image: url('/img/banner.png');">
+    <div class="col-12 banner">
       <div class="text">
-        <h1 class="display-3">Próximamente</h1>
+        <h1>Próximamente</h1>
         <h2>Mochila Electoral</h2>
       </div>
       <div class="counter row">
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="suscribe">
-      {{#bs-form model=login formLayout="inline" novalidate=true as |form|}}
+        {{#bs-form model=login novalidate=true as |form|}}
           {{#form.element placeholder="Email" property="email" as |el|}}
             <div class="input-group">
               <div class="input-group-prepend">
@@ -56,8 +56,11 @@
             </div>
           {{/form.element}}
           {{bs-button defaultText="Suscríbete" type="secondary" buttonType="submit"}}
-      {{/bs-form}}
+        {{/bs-form}}
       </div>
+      {{!-- Background --}}
+      <img src="img/banner-xs.png" class="background d-md-none">
+      <img src="img/banner.png" class="background d-none d-md-block">
     </div>
   </section>
 </main>
@@ -85,50 +88,50 @@
         <a href="">
           <img src="img/colaboradores/colaborador-06.png" alt="">
         </a>
-      </div>
-      <div class="col-12">
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-07.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-08.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-09.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-10.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-11.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
-        </a>
-      </div>
-      <div class="col-12">
-        <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-12.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-13.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-14.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-15.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-16.png" alt="">
         </a>
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-17.png" alt="">
         </a>
-      </div>
-      <div class="col-12">
         <a href="">
-          <img src="img/colaboradores/colaborador-01.png" alt="">
+          <img src="img/colaboradores/colaborador-18.png" alt="">
+        </a>
+        <a href="">
+          <img src="img/colaboradores/colaborador-19.png" alt="">
+        </a>
+        <a href="">
+          <img src="img/colaboradores/colaborador-20.png" alt="">
+        </a>
+        <a href="">
+          <img src="img/colaboradores/colaborador-21.png" alt="">
         </a>
       </div>
     </div>
