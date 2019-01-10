@@ -8,7 +8,7 @@ module.exports = function(deployTarget) {
   };
 
   ENV.git = {
-    repo: 'git@github.com:ef4/ember-cli-deploy-git.git',
+    repo: 'https://github.com/RedCiudadana/Mochila.git',
     branch: 'gh-pages',
     worktreePath: '/tmp/deploy-mochila',
     commitMessage: 'Deployed %@'
@@ -26,7 +26,7 @@ module.exports = function(deployTarget) {
 
   if (deployTarget === 'production') {
     ENV.build.environment = 'production';
-    ENV.rootURL = '/your-repo-name';
+    ENV.rootURL = '/Mochila';
   }
 
   // Note: if you need to build some configuration asynchronously, you can return
