@@ -122,21 +122,46 @@ $font-light: 400;
 
 @include media-breakpoint-up(md) {
     .banner {
+        height: 43vw;
+        text-align: left;
+
         // Layout
-        padding: 100px;
-    }
+        padding: 50px;
+        padding-top: 20px;
 
-    .counter {
-        margin-top: 40px;
-        width: 40%;
-        text-align: center;
-    }
-
-    .suscribe {
-        .input-group {
-            width: 25%;
-            margin-right: 40px;
+        .counter {
+            margin-top: 10px;
+            margin-left: 0px;
+            width: 40%;
+            text-align: center;
         }
+
+        .suscribe {
+            margin-top: 10px;
+
+            form {
+                display: flex;
+
+                button {
+                    height: 2.3rem;
+                }
+            }
+
+            .input-group {
+                width: 25%;
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .banner {
+        h1 {
+            font-size: 5rem;
+        }
+        .counter { margin-top: 50px; }
+        .suscribe { margin-top: 60px; }
     }
 }
 
@@ -156,5 +181,16 @@ footer {
         max-width: 30%;
         width: auto;
         margin: 25px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    footer {
+        img {
+            max-height: 80px;
+            max-width: 12%;
+            width: auto;
+            margin: 25px;
+        }
     }
 }
