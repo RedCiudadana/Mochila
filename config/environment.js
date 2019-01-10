@@ -17,6 +17,20 @@ module.exports = function(environment) {
       }
     },
 
+    metricsAdapters: [{
+      name: 'GoogleAnalytics',
+      environments: ['production', 'development'],
+      config: {
+        id: 'UA-132238237-1',
+        // Use verbose tracing of GA events
+        trace: environment === 'development',
+        // Ensure development env hits aren't sent to GA
+        sendHitTask: environment !== 'development',
+        // Specify Google Analytics plugins
+        // require: ['ecommerce']
+      }
+    }],
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -44,7 +58,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.rootURL = '/Mochila';
   }
 
   return ENV;

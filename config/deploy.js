@@ -26,7 +26,6 @@ module.exports = function(deployTarget) {
 
   if (deployTarget === 'production') {
     ENV.build.environment = 'production';
-    ENV.rootURL = '/Mochila';
   }
 
   // Note: if you need to build some configuration asynchronously, you can return

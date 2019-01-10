@@ -157,6 +157,8 @@ $font-light: 400;
 
 @include media-breakpoint-up(lg) {
     .banner {
+        padding: 70px;
+        padding-top: 40px;
         h1 {
             font-size: 5rem;
         }
