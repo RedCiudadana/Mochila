@@ -29,34 +29,32 @@
       </div>
       <div class="counter row">
         <div class="col-4">
-          <h1>00</h1>
+          <h1 id="days">00</h1>
           <h2>Días</h2>
         </div>
         <div class="col-4 center">
-          <h1>00</h1>
-          <h2>Días</h2>
+          <h1 id="hours">00</h1>
+          <h2>Horas</h2>
         </div>
         <div class="col-4">
-          <h1>00</h1>
-          <h2>Días</h2>
+          <h1 id="minutes">00</h1>
+          <h2>Minutos</h2>
         </div>
       </div>
       <div class="suscribe">
-        {{#bs-form model=login novalidate=true as |form|}}
-          {{#form.element placeholder="Email" property="email" as |el|}}
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <img
-                    src="img/icono-correo.png"
-                    alt="Icono de un paquete de correo">
-                </span>
-              </div>
-              <input value={{el.value}} class="form-control" placeholder="Email" oninput={{action (mut el.value) value="target.value"}} onchange={{action (mut el.value) value="target.value"}} id={{el.id}} type="text">
+        <form action="https://formspree.io/dev@redciudadana.org.gt" method="POST">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <img
+                  src="img/icono-correo.png"
+                  alt="Icono de un paquete de correo">
+              </span>
             </div>
-          {{/form.element}}
-          {{bs-button defaultText="Suscríbete" type="secondary" buttonType="submit"}}
-        {{/bs-form}}
+            <input type="email" name="_replyto" class="form-control" placeholder="Email">
+          </div>
+          <input type="submit" value="Suscríbete" class="btn btn-secondary submit" id="submit">
+        </form>
       </div>
       {{!-- Background --}}
       <img src="img/banner-xs.png" class="background d-md-none">
@@ -135,5 +133,31 @@
     </div>
   </div>
 </footer>
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("06/16/2019 00:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+  }, 1000);
+</script>
 
 {{outlet}}

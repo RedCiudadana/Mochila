@@ -2867,6 +2867,11 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
+countdown@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/countdown/-/countdown-2.6.0.tgz#677fb8e3a9d4cc4e76415901ba253b518af34177"
+  integrity sha1-Z3+446nUzE52QVkBuiU7UYrzQXc=
+
 cross-spawn@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-3.0.1.tgz#1256037ecb9f0c5f79e3d6ef135e30770184b982"
@@ -3570,6 +3575,15 @@ ember-concurrency@^0.8.7:
     babel-core "^6.24.1"
     ember-cli-babel "^6.8.2"
     ember-maybe-import-regenerator "^0.1.5"
+
+ember-countdown@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ember-countdown/-/ember-countdown-1.0.0.tgz#c5bf02b0e1bb1ad3fdcdce605c3b189a37a02979"
+  integrity sha512-E4mju8/P/ftZi63cGeRBXxo54jPLkdUf1bQEojuxgGVhn6BjLxJuOlC33gQwFXRjXEqq70hgdJ//aAwWTOal0w==
+  dependencies:
+    countdown "^2.6.0"
+    ember-cli-babel "^6.6.0"
+    ember-cli-htmlbars "^2.0.1"
 
 ember-data@~3.6.0:
   version "3.6.0"

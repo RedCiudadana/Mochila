@@ -125,6 +125,10 @@ $font-light: 400;
         height: 43vw;
         text-align: left;
 
+        h1 {
+            font-size: 3rem;
+        }
+
         // Layout
         padding: 50px;
         padding-top: 20px;
@@ -142,8 +146,8 @@ $font-light: 400;
             form {
                 display: flex;
 
-                button {
-                    height: 2.3rem;
+                #submit {
+                    height: 2.5rem !important;
                 }
             }
 
@@ -159,9 +163,7 @@ $font-light: 400;
     .banner {
         padding: 70px;
         padding-top: 40px;
-        h1 {
-            font-size: 5rem;
-        }
+
         .counter { margin-top: 50px; }
         .suscribe { margin-top: 60px; }
     }
