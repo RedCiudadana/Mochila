@@ -5,6 +5,11 @@ $secondary: #2ab3ac;
 
 $font-light: 400;
 
+body {
+    background-color: #f2f2f2f2;
+    color: $primary;
+}
+
 // Navbar
 
 .navbar {
@@ -13,7 +18,7 @@ $font-light: 400;
     padding-right: 20px;
 
     .navbar-brand img {
-        width: 200px;
+        width: 140px;
     }
 
     .social {
@@ -38,12 +43,53 @@ $font-light: 400;
         padding-right: 100px;
 
         .navbar-brand img {
-            width: 300px;
+            width: 160px;
         }
     }
 }
 
 // Main
+
+img.background {
+    width: 100%;
+    padding: 0;
+}
+
+.card {
+    text-align: center;
+    color: $primary;
+    padding: 15px;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+.card img {
+    width: 80%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: 90%;
+  vertical-align: middle;
+  margin: 5%;
+  padding-top: 40px;
+  border-radius: 15px;
+  color: white;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lighten($primary, 20%);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
 
 .banner {
     text-align: center;
@@ -127,7 +173,7 @@ $font-light: 400;
 
 @include media-breakpoint-up(md) {
     .banner {
-        height: 43vw;
+        height: auto;
         text-align: left;
 
         h1 {
