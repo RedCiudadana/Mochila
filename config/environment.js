@@ -58,6 +58,17 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.ifa = {
+      enabled: false,
+      inline: false,
+    };
+
+    // ENV.fingerprint = {
+    //   enabled: true, // set to true only in required environments
+    //   generateAssetMap: true,
+    //   fingerprintAssetMap: true
+    // };
+
     ENV.rootURL = '/Mochila';
   }
 

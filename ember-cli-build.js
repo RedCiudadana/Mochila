@@ -12,6 +12,9 @@ module.exports = function(defaults) {
     },
     'sassOptions': {
       implementation: nodeSass
+    },
+    'fingerprint': {
+      exclude: ['img/herramientas/*.png'],
     }
   });
 
