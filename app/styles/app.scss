@@ -80,15 +80,31 @@ img.background {
   vertical-align: middle;
   margin: 5%;
   padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 15px;
   color: white;
   opacity: 0;
   transition: .5s ease;
   background-color: lighten($primary, 20%);
+
+  h5 {
+      margin-bottom: 20px;
+  }
 }
 
 .card:hover .overlay {
   opacity: 1;
+}
+
+.banner-textless {
+    width: 200vw;
+}
+
+@include media-breakpoint-up(md) {
+    .banner-textless {
+        width: 100%;
+    }
 }
 
 .banner {
