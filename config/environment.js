@@ -69,7 +69,7 @@ module.exports = function(environment) {
     //   fingerprintAssetMap: true
     // };
 
-    ENV.rootURL = '/Mochila';
+    // ENV.rootURL = '/Mochila';
   }
 
   return ENV;
