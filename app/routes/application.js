@@ -51,7 +51,7 @@ export default Route.extend({
             description: '¿Cómo vamos con las elecciones? Conoce los datos aquí.'
         },
         {
-            title: 'Centro de Ubicación',
+            title: 'Centro de votación',
             img: 'mapa',
             url: 'https://endondevotas.tse.org.gt/',
             description: '¿Ya sabes dónde te toca votar? Haz click aquí'
