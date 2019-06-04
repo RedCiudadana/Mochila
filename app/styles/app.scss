@@ -5,9 +5,15 @@ $secondary: #2ab3ac;
 
 $font-light: 400;
 
+@font-face {
+  font-family: 'ApercuProRegular';
+  src: url('../fonts/ApercuProRegular.otf');
+}
+
 body {
     background-color: #f2f2f2f2;
     color: $primary;
+    font-family: 'ApercuProRegular';
 }
 
 // Navbar
