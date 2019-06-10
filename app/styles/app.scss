@@ -103,8 +103,14 @@ img.background {
   opacity: 1;
 }
 
+.banner-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 .banner-textless {
     width: 200vw;
+    overflow: hidden;
 }
 
 @include media-breakpoint-up(md) {
